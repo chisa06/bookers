@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   
-  def create
+  def new
     
   end
   
