@@ -12,7 +12,7 @@ class BooksController < ApplicationController
   
   def index
     @books = Book.all
-    render action: :new
+    
   end
   
   def show
