@@ -22,15 +22,16 @@
     </tbody>
   </table>
 
-
+<div class ="error" >
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>There is an error in your entry
+  There is an error in your entry(<%= @book.errors.count %>)
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
 <% end %>
+</div>
   
   <h2>New book</h2>
   
